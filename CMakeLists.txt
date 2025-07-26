@@ -15,3 +15,10 @@ target_include_directories(dummy_sock PUBLIC include)
 
 add_library(custom_socket SHARED src/custom_socket.cpp)
 target_link_libraries(custom_socket PUBLIC custom_client custom_server dummy_sock)
+
+
+add_executable(test_server src/tests/test_server.cpp)
+target_link_libraries(test_server PUBLIC custom_socket)
+add_executable(test_client src/tests/test_client.cpp)
+target_link_libraries(test_client PUBLIC custom_socket)
+
