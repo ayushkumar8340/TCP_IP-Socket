@@ -1,5 +1,5 @@
 # TCP/IP Socket 
-This repo is a implementation of easy to use socket for communicating data trough TCP/IP.
+This repo is an implementation of an easy-to-use socket for communicating data through TCP/IP.
 
 ## DEMO
 
